@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piezas</title>
+
+    <link rel="icon" type="image/svg" href="images/logo-chess.svg">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+		<div class="container-fluid">
+			<a href="index.html"><img src="images/logo-chess-blanco.svg" alt="Logo"></a>
+			<a href="index.html" class="navbar-brand">CHESS</a>
+
+			<!-- Boton para el menu movil -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+
+			<!-- Menu de navegacion -->
+			<div class="collapse navbar-collapse" id="menu">
+				<div class="container d-lg-flex justify-content-lg-start justify-content-center">
+					<!-- Nuevo contenedor con clases para dispositivos grandes y centrado -->
+					<ul class="navbar-nav mb-2 mb-lg-0 ms-5 text-lg-start text-center">
+						<!-- Añadiendo clases para dispositivos grandes y centrado -->
+						<li class="nav-item active" aria-current="page"><a href="index.html" class="nav-link">Inicio</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							  Aperturas
+							</a>
+							<ul class="dropdown-menu">
+							  <li><a class="dropdown-item" href="#">Action</a></li>
+							  <li><a class="dropdown-item" href="#">Another action</a></li>
+							  <li><hr class="dropdown-divider"></li>
+							  <li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						  </li>
+						<li class="nav-item"><a href="piezas.html" class="nav-link">Piezas</a></li>
+						<li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+					</ul>
+				</div>
+			</div>
+
+	</nav>
+
+
+    <!--  Contenido principal -->
+
+    <!-- Peon -->
+    <div class="card custom-container my-4 p-3">
+		<div class="row">
+			<div class="col-sm-12 col-xl-1 d-flex align-items-center justify-content-center">
+				<img class="img-fluid" src="images/peon.png" alt="">
+			</div>
+			<div class="col-sm-12 col-xl-7 d-flex align-items-center">
+				<div>
+					<div class="card-body">
+                        <div>
+                            <h5 class="text-center fs-3">Peón (Pawn♟️)</h5>
+                            <p class="text-center fs-5"> Los peones son las piezas más numerosas en el tablero y tienen un movimiento más limitado en comparación con otras piezas. En su primer movimiento, cada peón puede avanzar dos casillas hacia adelante en lugar de una. Después de su primer movimiento, solo pueden avanzar una casilla hacia adelante. Sin embargo, para capturar una pieza enemiga, los peones se mueven en diagonal. Cuando un peón alcanza el extremo opuesto del tablero, puede ser promocionado a cualquier otra pieza (excepto el rey), generalmente a una dama.</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-xl-4 d-flex align-items-center justify-content-center">
+				<div>
+					<div class="card-body">
+						<img class="img-fluid border rounded" src="images/mov-peon.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Caballo -->
+    <div class="card custom-container my-3 p-3">
+		<div class="row">
+			<div class="col-sm-12 col-xl-1 d-flex align-items-center justify-content-center">
+				<img class="img-fluid" src="images/caballo.png" alt="">
+			</div>
+			<div class="col-sm-12 col-xl-7 d-flex align-items-center">
+				<div>
+					<div class="card-body">
+                        <div>
+                            <h5 class="text-center fs-3">Caballo (Knight♞)</h5>
+                            <p class="text-center fs-5">  El movimiento del caballo es único en el ajedrez, ya que se desplaza en forma de "L": dos casillas en una dirección (horizontal o vertical) y luego una casilla perpendicular a esa dirección. Puede saltar sobre otras piezas en el tablero, lo que le confiere la capacidad de realizar movimientos tácticos y sorprendentes.</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-xl-4 d-flex align-items-center justify-content-center">
+				<div>
+					<div class="card-body">
+						<img class="img-fluid border rounded" src="images/mov-caballo.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Alfil -->
+    <div class="card custom-container my-3 p-3">
+		<div class="row">
+			<div class="col-sm-12 col-xl-1 d-flex align-items-center justify-content-center">
+				<img class="img-fluid" src="images/alfil.png" alt="">
+			</div>
+			<div class="col-sm-12 col-xl-7 d-flex align-items-center">
+				<div>
+					<div class="card-body">
+                        <div>
+                            <h5 class="text-center fs-3">Alfil (Bishop♝)</h5>
+                            <p class="text-center fs-5"> Los alfiles se mueven en diagonal a lo largo de las líneas de colores en las que están ubicados. Cada jugador tiene un alfil para los cuadros blancos y otro para los cuadros negros. Al igual que la torre, puede avanzar cualquier número de casillas en su dirección diagonal. Los alfiles son piezas valiosas para controlar diagonales importantes en el tablero y pueden desempeñar un papel clave en ataques y defensas.</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-xl-4 d-flex align-items-center justify-content-center">
+				<div>
+					<div class="card-body">
+						<img class="img-fluid border rounded" src="images/mov-alfil.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Torre -->
+    <div class="card custom-container my-3 p-3">
+		<div class="row">
+			<div class="col-sm-12 col-xl-1 d-flex align-items-center justify-content-center">
+				<img class="img-fluid" src="images/torre.png" alt="">
+			</div>
+			<div class="col-sm-12 col-xl-7 d-flex align-items-center">
+				<div>
+					<div class="card-body">
+                        <div>
+                            <h5 class="text-center fs-3">Torre (Rook♜)</h5>
+                            <p class="text-center fs-5"> La torre se mueve en línea recta, ya sea horizontal o verticalmente, y puede avanzar cualquier número de casillas que estén libres en esa dirección. Es una pieza fundamental para controlar las columnas y las filas del tablero, así como para realizar maniobras defensivas y ofensivas.</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-xl-4 d-flex align-items-center justify-content-center">
+				<div>
+					<div class="card-body">
+						<img class="img-fluid border rounded" src="images/mov-torre.PNG" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Dama -->
+    <div class="card custom-container my-3 p-3">
+		<div class="row">
+			<div class="col-sm-12 col-xl-1 d-flex align-items-center justify-content-center">
+				<img class="img-fluid" src="images/dama.png" alt="">
+			</div>
+			<div class="col-sm-12 col-xl-7 d-flex align-items-center">
+				<div>
+					<div class="card-body">
+                        <div>
+                            <h5 class="text-center fs-3">Dama (Queen♛)</h5>
+                            <p class="text-center fs-5">También conocida como la "reina", es la pieza más poderosa del juego. Puede moverse en cualquier dirección (horizontal, vertical y diagonal) y en cualquier número de casillas que estén libres. Su versatilidad la convierte en una pieza crucial tanto para la defensa como para el ataque.</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-xl-4 d-flex align-items-center justify-content-center">
+				<div>
+					<div class="card-body">
+						<img class="img-fluid border rounded" src="images/mov-dama.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Rey -->
+    <div class="card custom-container my-3 p-3">
+		<div class="row">
+			<div class="col-sm-12 col-xl-1 d-flex align-items-center justify-content-center">
+				<img class="img-fluid" src="images/rey.png" alt="">
+			</div>
+			<div class="col-sm-12 col-xl-7 d-flex align-items-center">
+				<div>
+					<div class="card-body">
+                        <div>
+                            <h5 class="text-center fs-3">Rey (King♚)</h5>
+                            <p class="text-center fs-5">Es la pieza más importante del juego. Su objetivo 
+                                principal es evitar ser capturado ("jaque mate"). El rey puede moverse en
+                                 cualquier dirección, pero solo una casilla a la vez. Sin embargo, existen 
+                                 algunas excepciones, como el enroque, que permite al rey moverse dos casillas 
+                                 hacia la torre y la torre saltar al lado opuesto del rey en un solo movimiento, 
+                                 bajo ciertas condiciones.</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-xl-4 d-flex align-items-center justify-content-center">
+				<div>
+					<div class="card-body">
+						<img class="img-fluid border rounded" src="images/mov-rey.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    
+
+    <footer>
+        <div class="coronar bg-f8f9fa w-98 d-flex text-align-center text-black mt-3 mb-1" style="height: 10vh;">
+            <div class="peon img-fluid" style="width: 5vw;"></div>
+            <p class="coronar-text ms-35 fs-7">Created by: David, Edu & Antonio</p>
+            <div class="tapa"></div>
+        </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
