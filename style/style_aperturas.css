@@ -23,3 +23,72 @@ nav img {
 .videoDiv {
     width: 50%;
 }
+
+.coronar {
+    background-color: white;
+    color: black;
+    width: 94vw;
+    height: 10vh;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    display: flex;
+    text-align: center;
+    
+
+    .peon {
+        height: 100%;
+        width: 5vw;
+        background-image: url("../images/peon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: coronar 5.5s linear infinite ;
+        z-index: 100;
+    }
+
+    .coronar-text {
+        margin-left: 35vw;
+        font-size: 1.3vw;
+        
+    }
+
+    .tapa {
+        width: 30vw;
+        height: 100%;
+        background-color: white;
+        transform: translateX(-25vw);
+        animation: tapar-texto 5.5s linear infinite ;
+        
+    }
+}
+
+@keyframes coronar {
+
+    69% {
+        background-image: url("../images/peon.png");
+    }
+
+    70% {
+        background-image: url("../images/dama.png");
+        transform: translateX(85vw);
+    }
+
+    100% {
+        background-image: url("../images/dama.png");
+        transform: translateX(85vw);
+    }
+}
+
+@keyframes tapar-texto {
+    30% {
+        transform: translateX(-25vw);
+    }
+
+    54% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
