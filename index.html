@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chess</title>
-	<favicon></favicon>
+	<link rel="icon" type="image/svg" href="images/logo-chess.svg">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="style/style.css">
 </head>
@@ -13,24 +13,36 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
 		<div class="container-fluid">
-			<img src="images/logo-chess-blanco.svg" alt="Logo">
-			<a href="#" class="navbar-brand">CHESS</a>
+			<a href="index.html"><img src="images/logo-chess-blanco.svg" alt="Logo"></a>
+			<a href="index.html" class="navbar-brand">CHESS</a>
 
 			<!-- Boton para el menu movil -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
+
 			<!-- Menu de navegacion -->
 			<div class="collapse navbar-collapse" id="menu">
 				<div class="container d-lg-flex justify-content-lg-start justify-content-center">
 					<!-- Nuevo contenedor con clases para dispositivos grandes y centrado -->
-					<ul class="navbar-nav mb-2 mb-lg-0 text-lg-start text-center">
+					<ul class="navbar-nav mb-2 mb-lg-0 ms-5 text-lg-start text-center">
 						<!-- Añadiendo clases para dispositivos grandes y centrado -->
-						<li class="nav-item active" aria-current="page"><a href="#" class="nav-link">Inicio</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Piezas</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Aperturas</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+						<li class="nav-item active" aria-current="page"><a href="index.html" class="nav-link">Inicio</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Aperturas
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="apertura1.html">Defensa Siciliana</a></li>
+								<li><a class="dropdown-item" href="apertura2.html">Gambito de Dama</a></li>
+								<li><a class="dropdown-item" href="apertura3.html">Defensa Rui López</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a href="piezas.html" class="nav-link">Piezas</a></li>
+						<li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
 					</ul>
 				</div>
 			</div>
@@ -39,7 +51,8 @@
 
 	<!-- Acordeon -->
 
-	<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="2000">
+	<div id="carouselExampleDark" class="carousel carousel-dark slide mb-5" data-bs-ride="carousel"
+		data-bs-interval="2000">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
 				aria-current="true" aria-label="Slide 1"></button>
@@ -53,24 +66,23 @@
 				<img src="./images/acordeon1.jpg" class="d-block w-100" style="object-fit: cover; height: 80vh;"
 					alt="...">
 				<div class="carousel-caption d-none d-md-block">
-					<h5>First slide label</h5>
-					<p>Some representative placeholder content for the first slide.</p>
+					<h5>Ajedrez</h5>
+					<p>Aquí aprenderás el funcionamiento y curiosidades del ajedrez.</p>
 				</div>
 			</div>
 			<div class="carousel-item" data-bs-interval="2000">
-				<img src="./images/acordeon2.jpg" class="d-block w-100" style="object-fit: cover; height: 80vh;"
+				<img src="./images/aperturas.jpg" class="d-block w-100" style="object-fit: cover; height: 80vh;"
 					alt="...">
 				<div class="carousel-caption d-none d-md-block">
-					<h5>Second slide label</h5>
-					<p>Some representative placeholder content for the second slide.</p>
+					<h5>Aperturas</h5>
+					<p>Descubre cuáles son las aperturas más utilizadas.</p>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img src="./images/acordeon1.jpg" class="d-block w-100" style="object-fit: cover; height: 80vh;"
-					alt="...">
+				<img src="./images/piezas.jpg" class="d-block w-100" style="object-fit: cover; height: 80vh;" alt="...">
 				<div class="carousel-caption d-none d-md-block">
-					<h5>Third slide label</h5>
-					<p>Some representative placeholder content for the third slide.</p>
+					<h5>Piezas</h5>
+					<p>Cada pieza tiene su valor, que representa su importancia en la partida.</p>
 				</div>
 			</div>
 		</div>
@@ -86,13 +98,31 @@
 
 	<!-- Contenido Principal -->
 
+	<!-- Descripción ajedrez -->
+
+	<div class="container">
+		<p class="m-5 text-center">
+			El ajedrez es un juego de mesa milenario que desafía la mente y la estrategia de sus jugadores. Con un
+			tablero
+			de 64 casillas y 32 piezas, se enfrentan dos adversarios con el objetivo de capturar al rey del oponente.
+			Cada
+			pieza tiene movimientos específicos que permiten crear tácticas y estrategias únicas, desde el caballo que
+			salta
+			en L hasta la poderosa reina que puede moverse en cualquier dirección. El ajedrez requiere habilidades como
+			la
+			planificación a largo plazo, la anticipación de movimientos del oponente y la capacidad de sacrificar piezas
+			para alcanzar la victoria. Es un juego que ha desafiado a grandes mentes a lo largo de la historia y sigue
+			siendo apreciado por su profundidad y complejidad estratégica.
+		</p>
+	</div>
+
 	<!-- Piezas -->
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-12 col-md-6 col-xl-4">
 				<div class="card">
-					<img src="./images/piezas.jpg" class="card-img-top" alt="...">
+					<img src="./images/rey.jpg" class="card-img-top" alt="...">
 					<div class="card-body">
 						<h5 class="card-title">El rey</h5>
 						<p class="card-text">El rey es la pieza más importante en el ajedrez, moviéndose una casilla en
@@ -100,9 +130,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-12 col-md-6 col-xl-4">
 				<div class="card">
-					<img src="./images/piezas.jpg" class="card-img-top" alt="...">
+					<img src="./images/dama.jpg" class="card-img-top" alt="...">
 					<div class="card-body">
 						<h5 class="card-title">La dama</h5>
 						<p class="card-text">La dama es la pieza más poderosa en el ajedrez, capaz de moverse en
@@ -111,9 +141,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-12 col-md-6 col-xl-4 justify-content-md-center">
 				<div class="card">
-					<img src="./images/piezas.jpg" class="card-img-top" alt="...">
+					<img src="./images/acordeon2.jpg" class="card-img-top" alt="...">
 					<div class="card-body">
 						<h5 class="card-title">El peón</h5>
 						<p class="card-text">El peón es la pieza más común pero limitada en el ajedrez. Se mueve hacia
@@ -124,13 +154,71 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-12 text-center">
-				<a href="#"><button type="button" class="btn btn-outline-dark">Ver piezas</button></a>
+		<div class="row my-5">
+			<div class="col-12 text-center mb-5">
+				<a href="piezas.html"><button type="button" class="btn btn-outline-dark">Ver todas las piezas</button></a>
 			</div>
 		</div>
 	</div>
 
+	<!-- Aperturas -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9">
+				<h2>Defensa siciliana</h2>
+				<p>Se inicia con 1.e4 c5. Es una apertura muy popular y dinámica que busca contrarrestar el centro desde
+					el
+					flanco, presionando la casilla d4 y preparando el desarrollo de las piezas en el flanco de la reina.
+				</p>
+
+			</div>
+			<div class="col-sm-3">
+				<a href="apertura1.html"><button type="button" class="btn btn-outline-dark">Ver apertura</button></a>
+			</div>
+		</div>
+
+
+
+		<div class="row">
+			<div class="col-sm-9">
+				<h2>Gambito de Dama</h2>
+				<p>
+					El Gambito de Dama es una apertura agresiva donde las blancas sacrifican un peón para obtener un
+					desarrollo rápido y activo, buscando el control del centro y la iniciativa.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<a href="apertura2.html"><button type="button" class="btn btn-outline-dark">Ver apertura</button></a>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-sm-9">
+				<h2>Defensa Rui López</h2>
+				<p>
+					La Defensa Ruy López es una de las aperturas más antiguas y respetadas en el ajedrez, donde las
+					negras buscan un desarrollo sólido y luchan por el control del centro después de 1.e4 e5 2.Nf3 Nc6
+					3.Bb5.
+				</p>
+			</div>
+			<div class="col-sm-3">
+				<a href="apertura3.html"><button type="button" class="btn btn-outline-dark">Ver apertura</button></a>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Footer -->
+
+	<footer>
+		<div class="coronar">
+			<div class="peon"></div>
+			<p class="coronar-text">Created by: David, Edu y Antonio</p>
+			<div class="tapa"></div>
+		</div>
+	</footer>
 
 	<script src="js/bootstrap.bundle.min.js"></script>
 

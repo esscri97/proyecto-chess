@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+}
+
+/* Navbar */
+
+nav img{
+    width: 50px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.navbar-brand{
+    font-size: 40pt;
+}
+
+
+/* Contenido */
+
+#cuerpo {
+    height: 120vh;}
+
+
+#rrss{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+}
+
+.ig{
+    width: 100%;
+    height: 100%;
+    background: url('../images/ig_bn.svg') no-repeat  center;
+    background-size: 50%;
+}
+
+.ig:hover{
+    background: url('../images/ig.svg') no-repeat center;
+    background-size: 50%;
+    cursor: pointer;
+}
+
+.tw{
+    width: 100%;
+    height: 100%;
+    background: url('../images/tw_bn.svg') no-repeat center;
+    background-size: 50%;
+}
+
+.tw:hover{
+    background: url('../images/tw.svg') no-repeat center;
+    background-size: 50%;
+    cursor: pointer;
+}
+
+.yt{
+    width: 100%;
+    height: 100%;
+    background: url('../images/yt_bn.svg') no-repeat center;
+    background-size: 50%;
+}
+
+.yt:hover{
+    background: url('../images/yt.svg') no-repeat center;
+    background-size: 50%;
+    cursor: pointer;
+}
+
+.tt{
+    width: 100%;
+    height: 100%;
+    background: url('../images/tt_bn.svg') no-repeat center;
+    background-size: 50%;
+}
+
+.tt:hover{
+    background: url('../images/tt.svg') no-repeat center;
+    background-size: 50%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Footer */
+
+.coronar {
+    background-color: white;
+    color: black;
+    width: 96vw;
+    height: 10vh;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    display: flex;
+    text-align: center;
+    
+
+    .peon {
+        height: 100%;
+        width: 5vw;
+        background-image: url("../images/peon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: coronar 5.5s linear infinite ;
+        z-index: 100;
+    }
+
+    .coronar-text {
+        margin-left: 35vw;
+        font-size: 1.3vw;
+        
+    }
+
+    .tapa {
+        width: 20vw;
+        height: 100%;
+        background-color: white;
+        transform: translateX(-20vw);
+        animation: tapar-texto 5.5s linear infinite ;
+        
+    }
+}
+
+@keyframes coronar {
+
+    69% {
+        background-image: url("../images/peon.png");
+    }
+
+    70% {
+        background-image: url("../images/dama.png");
+        transform: translateX(90vw);
+    }
+
+    100% {
+        background-image: url("../images/dama.png");
+        transform: translateX(90vw);
+    }
+}
+
+@keyframes tapar-texto {
+    27% {
+        transform: translateX(-20vw);
+    }
+
+    46% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
